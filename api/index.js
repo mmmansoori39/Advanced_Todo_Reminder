@@ -21,7 +21,7 @@ const port = process.env.PORT || 3000
 app.use(bodyParser.json());
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://advanced-todo-reminder.onrender.com/",
     credentials: true
 }));
 
