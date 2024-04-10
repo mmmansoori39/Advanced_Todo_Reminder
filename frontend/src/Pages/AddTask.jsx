@@ -21,7 +21,7 @@ function AddTask() {
       toast.error("Please fill all input fields");
     } else {
       try {
-        const TaskRoute = await fetch("http://localhost:4000/tasks", {
+        const TaskRoute = await fetch("/tasks", {
           method: "POST",
           credentials: "include",
           headers: {

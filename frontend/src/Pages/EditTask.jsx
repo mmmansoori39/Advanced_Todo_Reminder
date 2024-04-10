@@ -17,7 +17,7 @@ function EditTask() {
         const fetchData = async (taskId) => {
         try {
             const id = taskId.taskId;
-            const response = await fetch(`http://localhost:4000/tasks/${id}`, {
+            const response = await fetch(`/tasks/${id}`, {
             method: "GET",
             credentials: "include",
             headers: {

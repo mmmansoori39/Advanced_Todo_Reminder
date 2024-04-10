@@ -24,7 +24,7 @@ function Register() {
         }else{
 
             try {
-                const RegistrationRoute = await fetch("http://localhost:4000/register", {
+                const RegistrationRoute = await fetch("/register", {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json',

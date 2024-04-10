@@ -18,7 +18,7 @@ function Login() {
       return;
     }
     try {
-      const LoginRoute = await fetch("http://localhost:4000/login", {
+      const LoginRoute = await fetch("/login", {
         method: "POST",
         credentials: "include",
         headers: {

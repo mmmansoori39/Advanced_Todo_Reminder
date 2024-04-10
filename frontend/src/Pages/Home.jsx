@@ -15,7 +15,7 @@ function Home() {
       const fetchData = async () => {
         
       try {
-          const response = await fetch("http://localhost:4000/tasks", {
+          const response = await fetch("/tasks", {
           method: "GET",
           credentials: "include",
           headers: {

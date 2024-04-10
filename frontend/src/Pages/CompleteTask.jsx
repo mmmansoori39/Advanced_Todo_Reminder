@@ -12,7 +12,7 @@ function CompleteTask() {
   useEffect(() => {
     const fetchData = async () => {
     try {
-        const response = await fetch("http://localhost:4000/tasks/completed", {
+        const response = await fetch("/tasks/completed", {
         method: "GET",
         credentials: "include",
         headers: {
@@ -43,7 +43,7 @@ const updateTasksAfterDeletion = (deletedTaskId) => {
 const deleteTask = async (id)=>{
 
   try {
-    const TaskRoute = await fetch("http://localhost:4000/tasks/delete", {
+    const TaskRoute = await fetch("/tasks/delete", {
       method: "POST",
       credentials: "include",
       headers: {
