@@ -22,7 +22,6 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    let aa = 100;
     const fetchAndCheckTasks = async () => {
       try {
         const response = await fetch("http://localhost:4000/tasks/remaining", {
@@ -43,8 +42,6 @@ function App() {
         tasks.forEach((task) => {
           const reminderTime = new Date(task.reminderTime);
           const currentTime = new Date();
-          console.log("cuurentTime ::",currentTime);
-          console.log("reminderTime ::",reminderTime)
           // Check if current time matches the reminder time
           if (
             currentTime.getFullYear() === reminderTime.getFullYear() &&

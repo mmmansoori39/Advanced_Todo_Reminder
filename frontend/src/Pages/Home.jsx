@@ -45,7 +45,7 @@ const updateTasksAfterDeletion = (deletedTaskId) => {
 const deleteTask = async (id)=>{
 
   try {
-    const TaskRoute = await fetch("http://localhost:4000/tasks/delete", {
+    const TaskRoute = await fetch("/tasks/delete", {
       method: "POST",
       credentials: "include",
       headers: {
@@ -72,7 +72,7 @@ const deleteTask = async (id)=>{
 // ------------------------update status-----------------
   const UpdateStatus = async(id)=>{
     try {
-      const TaskRoute = await fetch("http://localhost:4000/tasks/status", {
+      const TaskRoute = await fetch("/tasks/status", {
         method: "PUT",
         credentials: "include",
         headers: {
